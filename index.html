@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ремонт бытовой техники на дому — выезд мастера за 1 час, гарантия до 2 лет, диагностика бесплатно.">
+  <title>Ремонт бытовой техники на дому — МастерСервис</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Мастер<span>Сервис</span></a>
+      <a href="#request" class="btn btn--primary btn--sm">Вызвать мастера</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content" data-animate>
+          <p class="hero__badge">Выезд по городу — бесплатно</p>
+          <h1 class="hero__title">Ремонт бытовой техники на дому за 1 час</h1>
+          <p class="hero__text">
+            Стиральные машины, холодильники, посудомойки, плиты и другая техника.
+            Диагностика бесплатно, гарантия на работы до 2 лет, оригинальные запчасти.
+          </p>
+          <div class="hero__actions">
+            <a href="#request" class="btn btn--primary">Оставить заявку</a>
+          </div>
+        </div>
+
+        <div class="hero__stats" data-animate>
+          <div class="stat">
+            <span class="stat__value">12</span>
+            <span class="stat__label">лет на рынке</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">18 000+</span>
+            <span class="stat__label">ремонтов</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value">4.9</span>
+            <span class="stat__label">средняя оценка</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="section-title" data-animate>Почему выбирают нас</h2>
+        <p class="section-subtitle" data-animate>Работаем честно, называем цену до начала ремонта и не берём деньги за диагностику.</p>
+
+        <ul class="benefits__grid">
+          <li class="benefit" data-animate>
+            <div class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </div>
+            <h3 class="benefit__title">Выезд за 1 час</h3>
+            <p class="benefit__text">Мастер приезжает в удобное время, включая вечер и выходные.</p>
+          </li>
+
+          <li class="benefit" data-animate>
+            <div class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="benefit__title">Гарантия до 2 лет</h3>
+            <p class="benefit__text">Официальный договор и гарантия на работу и запчасти.</p>
+          </li>
+
+          <li class="benefit" data-animate>
+            <div class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16"></path>
+                <path d="M7 7v13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7"></path>
+                <path d="M9 7V4h6v3"></path>
+              </svg>
+            </div>
+            <h3 class="benefit__title">Бесплатная диагностика</h3>
+            <p class="benefit__text">Находим причину поломки и называем цену до начала работ.</p>
+          </li>
+
+          <li class="benefit" data-animate>
+            <div class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit__title">Оригинальные запчасти</h3>
+            <p class="benefit__text">Склад ходовых деталей — большинство ремонтов делаем сразу.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="request" id="request">
+      <div class="container request__inner">
+        <div class="request__content" data-animate>
+          <h2 class="section-title">Оставьте заявку</h2>
+          <p class="section-subtitle section-subtitle--left">
+            Перезвоним в течение 10 минут, уточним детали и назовём предварительную стоимость.
+          </p>
+          <ul class="request__list">
+            <li>Работаем без выходных с 8:00 до 22:00</li>
+            <li>Оплата после ремонта — наличными или картой</li>
+            <li>Гарантия на все виды работ</li>
+          </ul>
+        </div>
+
+        <form class="form" id="requestForm" novalidate>
+          <div class="form__field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name">
+            <span class="form__error" data-error-for="name"></span>
+          </div>
+
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+            <span class="form__error" data-error-for="phone"></span>
+          </div>
+
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <span class="form__error" data-error-for="email"></span>
+          </div>
+
+          <div class="form__field">
+            <label for="message">Что случилось</label>
+            <textarea id="message" name="message" rows="4" placeholder="Опишите проблему: марка техники, что не работает"></textarea>
+            <span class="form__error" data-error-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 МастерСервис. Все права защищены.</p>
+      <ul class="footer__links">
+        <li><a href="mailto:kostukovi418@gmail.com">kostukovi418@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
