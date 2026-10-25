@@ -1,19 +1,3 @@
-const animateItems = document.querySelectorAll("[data-animate]");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-animateItems.forEach((item) => observer.observe(item));
-
 const form = document.getElementById("requestForm");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^[\d\s()+-]{10,}$/;
