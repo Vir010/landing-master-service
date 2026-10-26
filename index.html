@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Подключение стилей AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +29,6 @@
   <main>
     <section class="hero">
       <div class="container hero__inner">
-        <!-- Заменили data-animate на data-aos="fade-in" (просто проявление) -->
         <div class="hero__content" data-aos="fade-in">
           <p class="hero__badge">Выезд по городу — бесплатно</p>
           <h1 class="hero__title">Ремонт бытовой техники на дому за 1 час</h1>
@@ -41,7 +41,6 @@
           </div>
         </div>
 
-        <!-- Заменили на slide-up (выезд снизу) -->
         <div class="hero__stats" data-aos="fade-up">
           <div class="stat">
             <span class="stat__value">12</span>
@@ -66,7 +65,6 @@
           деньги за диагностику.</p>
 
         <ul class="benefits__grid">
-          <!-- Делаем stagger (очередь) через data-aos-delay -->
           <li class="benefit" data-aos="fade-up" data-aos-delay="0">
             <div class="benefit__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -172,17 +170,6 @@
       </ul>
     </div>
   </footer>
-
-  <!-- Подключение скрипта AOS и его инициализация -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // Длительность анимации
-      once: true     // Анимация срабатывает только один раз при скролле
-    });
-  </script>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

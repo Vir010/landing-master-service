@@ -1,3 +1,11 @@
+// Инициализация анимаций AOS
+if (typeof AOS !== "undefined") {
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+}
+
 const form = document.getElementById("requestForm");
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phonePattern = /^[\d\s()+-]{10,}$/;
